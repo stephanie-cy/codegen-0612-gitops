@@ -26,6 +26,8 @@ spec:
       - env:
         - name: MODEL_ENDPOINT
           value: http://codegen-0612-model-server:8001
+        - name: MODEL_NAME
+          value: "Nondzu/Mistral-7B-code-16k-qlora"
         image:  quay.io/yangcao/codegen:latest
         name: app-inference
         ports:
